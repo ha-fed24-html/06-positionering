@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 1em 2em;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F7BE6C;
+	padding: 1.5em;
+	position: relative;
+}
+.tabs > * {
+	font-size: 140%;
+	background-color: #ECB587;
+	border: 2px solid #5F4026;
+	padding: 0.5em 1.3em;
+	margin: 0.2em;
+}
+
+.tabs .selected {
+	background-color: #CB6938;
+	position: relative;
+	bottom: 0.4em;
+}
+
+/* Hexadecimala tal: 0123456789abcdef */
