@@ -1,3 +1,10 @@
+body {
+	margin: 0;
+	padding: 1em;
+}
+* {
+	box-sizing: border-box;
+}
 
 .main-menu {
 	border: 1px solid black;
@@ -35,8 +42,176 @@
 .move-2 {
 	position: absolute;
 	top: 0em;
-	left: 0em;
-	/* right: 0em; */
+	/* left: 0em; */
+	right: 0em;
 	background-color: pink;
 	opacity: 0.5;
+}
+.move-3 {
+	position: fixed;
+	right: 4em;
+	top: 2em;
+	background-color: rgb(98, 197, 98);
+	opacity: 0.5;
+}
+
+.dialog {
+	position: fixed;
+	top: 0em;
+	left: 0em;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: grid;
+	place-items: center;
+}
+.content {
+	border: 1px solid black;
+	padding: 2em;
+	width: 60vw;
+	background-color: lightgray;
+}
+
+
+/* Övning 6.1 */
+/* .bubbles {
+    background-color: #FFE4FA;
+    padding: 1em;
+    min-height: 14em;
+    position: relative;
+}
+.bubbles > div {
+    border-radius: 9001em;
+    border: none;
+    position: absolute;
+}
+
+.bubble1 {
+	width: 4em;
+	height: 4em;
+	background-color: rgb(78, 215, 215);
+	top: 2em;
+	left: 11em;
+}
+.bubble2 {
+	width: 4.5em;
+	height: 4.5em;
+	background-color: rgb(197, 67, 197);
+	top: 7em;
+	left: 5em;
+}
+.bubble3 {
+	width: 6em;
+	height: 6em;
+	background-color: rgb(230, 185, 100);
+	top: 6em;
+	left: 18em;
+}
+.bubble4 {
+	width: 3em;
+	height: 3em;
+	background-color: rgb(99, 207, 99);
+	top: 3em;
+	left: 25em;
+}
+.bubble5 {
+	width: 4em;
+	height: 4em;
+	background-color: rgb(37, 37, 189);
+	top: 7em;
+	left: 27em;
+} */
+/* width, height, background-color, top, left */
+
+.bubbles {
+    background-color: #FFE4FA;
+    padding: 1em;
+    min-height: 14em;
+    /* width: 25em; */
+    position: relative;
+
+}
+
+.bubbles > div {
+    border-radius: 9001em;
+    border: none;
+    position: absolute;
+}
+
+.bubble1 {
+    background-color: #DA27D4;
+    width: 4em;
+    height: 4em;
+    top: 50%;
+    left: 10%;
+}
+
+.bubble2 {
+    background-color: #99E0FA;
+    width: 3em;
+    height: 3em;
+    top: 2em;
+    left: 5em;
+}
+
+.bubble3 {
+    background-color: #FEC67A;
+    width: 6em;
+    height: 6em;
+    top: 6em;
+    right: 10em;
+}
+
+.bubble4 {
+    background-color: #9CF76A;
+    width: 3em;
+    height: 3em;
+    top: 3em;
+    right: 6em;
+}
+
+.bubble5 {
+    background-color: #4D55DA;
+    width: 4em;
+    height: 4em;
+    bottom: 3em;
+    right: 2em;
+}
+
+
+/* Genomskinlighet */
+.ghost {
+	opacity: 0.2;
+	background-color: rgb(233, 230, 146);
+}
+
+
+.stack {
+	border: 1px solid black;
+	padding: 1em;
+	position: relative;
+	min-height: 5em;
+}
+.stack > * {
+	position: absolute;
+	border: 1px solid darkgray;
+	padding: 1em 2em;
+}
+.stack .one {
+	left: 1em; top: 0.5em;
+	background-color: rgb(169, 56, 56);
+}
+.stack .two {
+	left: 3em; top: 1em;
+	background-color: rgb(194, 87, 87);
+	z-index: 10;
+}
+.stack .three {
+	left: 5em; top: 1.5em;
+	background-color: rgb(214, 128, 128);
+}
+.stack .four {
+	left: 7em; top: 2em;
+	background-color: rgb(227, 188, 188);
+	z-index: 11;
 }
